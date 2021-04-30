@@ -1,0 +1,75 @@
+XP is about Technical Practices.  It's a way of building software products together as a team.
+
+Turn up the Good: Amplify it (Woody Zuill)
+------------------------------------------------
+A fundamental idea of extreme programming is to take good practices and amplify them to extreme levels. 
+
+For example, software testing is a good practice. By testing our software, we can find and fix defects before we deliver it to our customers. 
+It's a good practice, so let's do it to the extreme. 
+Let's do it all the time. We call this test-driven development or test-first development, and we do it with automated tests.
+
+The same thing with code review. When we review our code, we find and fix defects before we ship it to our customers. 
+Code review is good, so let's do that to the extreme. Let's review the code all the time. We do it with a partner, and we call it pair programming.
+
+ The same thing with integrating and building your code. We get benefits from integrating our code together and building it frequently. 
+ So let's integrate and build the code all the time. We call this continuous integration.
+ 
+ Values: Communication, Simplicity, Feedback, Courage, Respect.
+ -------------------------------------------------------
+  Building software is a collaborative activity. Most software is built by teams, not single people. 
+  
+  Simple sytem is easy to extend, easy to add features to.
+  
+   Feedback: Frequent/continuous/Immediate    checks, Correct course ----> reach destination
+   When I visit a new city, I like to go for a walk. I might go in search of afternoon coffee or a great museum. I pull out my smartphone and the maps application, and I plot a course to my destination.    Every block along the way, I compare where the app says I am with reality. Am I really at the intersection of those two big streets? If I'm not, I correct course. I get back on track. And I usually make it to my destination. The same thing is true when we're building software products.
+   
+   Feedback from Customers, Users, Stakeholders, 
+   Constant Feedback from Peers (Pair/Mob Programming), Constant Feedback from Tests (Automated, TDD approach)
+   
+   Code IDE gives immediate feedback
+   
+   Iteration = Sprint
+   Iteration plan = Sprint Plan
+   Long Range Planning - Release Planning / Product Increment Planning / Quarterly Release Planning  --- Forecast
+   
+   With TDD, Quality is built-in
+   
+ code reviews usually take place long after you've written the code. It takes a long time to get back into the mental context of the code and figure out how to make the improvements your teammates suggested. 
+ . Code reviews can be painful.  For many of us, when you're in a code review, it feels like your teammates are attacking you, telling you about everything's that's wrong with your code. You get defensive and fight back, rather than taking their well-intentioned advice.
+ 
+  But of course, code review is beneficial. We find and fix bugs before delivering the product to our stakeholders, ensuring a higher quality product. We learn about the code that other people on the team wrote. We might even learn something new about the programming language or the problem domain. So we amplify the benefits and minimize the pain of code reviews by doing them all the time. We write code jointly with a partner, reviewing the code together in real time as we go. And we call it pair programming.
+  
+  And we quickly agree on things like coding conventions. 
+  
+  . One common technique for pair programming is called driver-navigator. The metaphor comes from driving a car. There's one person in the driver's seat, the driver. The driver has complete control over the car. The person sitting in the passenger seat next to you is the navigator. In the days before you could use your phone for navigation, the person in the passenger seat helped you navigate. They unfolded the map. They plotted the course from here to our destination. And they told you, turn by turn, exactly how to get there. And the navigator never touched the steering wheel or the pedals. That would be really dangerous. On a long drive, you'd switch places. Your friend would become the driver, and you'd become the navigator. In pair programming, the driver-navigator technique is just like that. The driver sits at the keyboard and controls the mouse. They have full control over the tests and the code that gets written. The navigator offers guidance. Depending on the skills of the driver, that guidance might range from a high-level overview like, create a class that represents a network storage device, to low-level detail like, at line 23, at character position eight, type a semicolon. The driver and navigator use a timer and switch roles in short timeboxes, typically, four to 14 minutes in length. At the end of each timebox, the driver becomes the new navigator, and the navigator becomes the new driver.
+  
+  . So some teams take pair programming to the extreme. They amplify the goodness with a modern technique called mob programming. Everyone on the team works together on the same user story, on the same computer, at the same time. One of them is the driver and the rest are a skilled group of navigators. In short timeboxed intervals, they all rotate into the driver's role. Teams that practice mob programming experience extreme levels of quality and velocity.
+  
+   Continuous process:
+   is an overarching theme of extreme programming. If there's a software development practice that hurts, if it's hard to do, we do it at extreme frequency. We do it all the time. And with more practice, it becomes easier. Likewise, if you notice a practice that's good, that adds value, that benefits you, we do it at extreme frequency. We do it all the time. 
+   
+   . Integrating our code together and making sure it builds properly is good. We find out whether my code works with your code, and we make changes so all the code works well together. But it's painful. If we do it only every couple of weeks or once a release, there's a lot of code to integrate. My code undoubtedly got out of sync with your code. Code that worked in my branch won't even compile in your branch. It takes a lot of time and hard work to get the code back into a state where it will just compile, let alone run and pass all the tests. So we resolve that pain and amplify the benefits of integration by doing it all the time, and we call that continuous integration.
+   
+    There are three kinds of continuous process included in extreme programming, and we'll look at each one in turn. The first is design improvement, or refactoring. The second is continuous integration. And the last is small releases.
+    
+     big upfront design and infrequent deliveries could lead to problems
+     
+      Refactoring - Continuous design improvement: is the process of improving the internal structure of existing code without changing its external behavior.  We continuously simplify the code. Keeping the code simple increases our agility. Simpler code has higher quality and has fewer bugs. And simpler code is easier to extend and adapt as our stakeholders' needs change over time. Now, if design is good. We definitely get benefit from it. 
+      
+       But too much design upfront is a problem. The only proof that you can build what you designed is to actually build it. And all the time you spent designing upfront is time that you're not writing code and building that product. But what if your design is wrong and you need to rearchitect and recode the product? Big redesign at the end of a release is hard. It introduces a lot of risk into the release. There's usually time pressure to release the product, and you either postpone the redesign, or you get started, but you don't have time to finish it. Either way, you end up with low-quality code and a brittle system that's hard to change in the future. So we amplify the benefits and minimize the pain of design improvements by doing them all the time. We call these incremental design improvements refactoring. We refactor our code all the time based on everything we learn about both the technology and the problem domain as we go. Continuous design improvement helps us deliver better working software faster. 
+       
+        The more you refactor, the more patterns you'll notice. Some of the more common refactorings include renaming a variable or a method, moving a method or a class, extracting a method, a constant, or a variable, simplifying an expression or some logic.
+        
+        CI:
+        Continuous integration is the practice of merging everyone's code together, building it, and testing it several times per day. To be able to do this, everything has to be automated, checking out the code, building it, and running the tests. Big bang integration at the end of a release is painful.
+      
+      
+   
+   
+   
+   
+   
+ 
+ 
+ 
+ 
