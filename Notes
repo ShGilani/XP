@@ -1,4 +1,5 @@
 XP is about Technical Practices.  It's a way of building software products together as a team.
+we resolve that pain and amplify the benefits of integration by doing it all the time,
 
 Turn up the Good: Amplify it (Woody Zuill)
 ------------------------------------------------
@@ -64,7 +65,52 @@ Code review is good, so let's do that to the extreme. Let's review the code all 
         Continuous integration is the practice of merging everyone's code together, building it, and testing it several times per day. To be able to do this, everything has to be automated, checking out the code, building it, and running the tests. Big bang integration at the end of a release is painful.
       
       
-   
+      
+      and we call it continuous integration or CI. CI provides valuable feedback about the state of the software. Most importantly, it answers this question: Is the software releasable right now? Many teams use Jenkins as the tool for their CI system. 
+      continuous integration keeps the entire system in a releasable state.
+       Programmer welfare and sustainable pace ensure that the team can produce a high-quality product that meets stakeholder needs both now and in the future. If we work 80 hours this week, awesome, we'll probably get a lot done. But we won't be able to work 80 hours next week and the week after that, our bodies just can't take it, our creativity will suffer, our families will miss us, and we'll be writing code that's full of bugs. An important tool in XP is called the 40-hour work week. In the long run, working more than 40 hours a week doesn't increase productivity. When we overwork, our creativity and productivity decrease.
+       
+       
+   Small Releases:
+   -----------------
+    They could decide for themselves whether it was what they hoped it would be, and whether it was something their end-users would want to use, and together we adjusted the backlog of stories. Based on the feedback we got from them. It helped us make sure we were building the right product.
+    
+    Continuous delivery is a modern extension to XP that does exactly that. Continuous delivery extends the CI pipeline by actually delivering the code to your stakeholders every time there's a code change. Companies like Amazon, Facebook, Adobe, Etsy, and Netflix, deliver small releases to production many times per day, anywhere from 10s to 1,000s of releases per day.
+    
+    -----------------------------
+    
+     Another thing I loved about extreme programming, was its focus on being humane. 
+     
+     Programmer Welfare and Sustainable Pace:
+     ------------------------------------
+      We loved that XP included advice to take care of ourselves, and to work at a sustainable pace. Programmer welfare is a reminder that software developers are human, and that we're at our best when we take care of ourselves, humanely. That we're not simply mechanical resources or inputs into a machine. That we'll do our most creative, highest quality work, when we take the time to take care of ourselves. Sustainable pace is the concept that we can work at a given pace, indefinitely, and that whatever our work rate is, this iteration, we can work at the same rate, the next iteration, and the next iteration after that without anything suffering. We're neither going too fast nor too slow, we're working at just the right pace. 
+      
+      a reminder that software developers are human, and that we're at our best when we take care of ourselves humanely
+      he concept that we can work at a given pace indefinitely
+      
+      Release Planning, Iteration Planning using yeasterday's weather
+      -------------------------------------------------------------
+      
+       Velocity and yesterday's weather are tools you can use during iteration planning to forecast the right amount of work. Velocity is the amount of work you get done per iteration. One easy way to measure velocity is to count the number of stories completed per iteration. Yesterday's weather is a metaphor. The metaphor is that the easiest way to forecast today's weather is to assume that it will be a lot like yesterday's weather. Yesterday's weather in software development is the team's velocity, the number of stories they completed from previous sprints.
+       
+       Coding Standards and Collective Code Ownership:
+       ------------------------------------------------------
+        Collective Code Ownership, is the agreement that everyone on the team is responsible for every line of code. No single one of us is the sole owner or maintainer of any particular code module. If there's a bug to fix, anyone can, and should, fix it. If there's a new user story to add in a particular part of the code, anyone can add it.
+        
+        System metaphor and simple design:
+        -----------------------------------------
+        Match making system metaphor - shared story
+        a shared story that everyone on the team can tell about the product and how it works
+        
+        
+        
+        
+        
+
+
+       
+       
+      
    
    
    
