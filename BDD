@@ -4,4 +4,34 @@
   
   using a BDD framework, like Cucumber, can provide readable acceptance criteria, improved collaboration, and identity defects earlier in the testing life cycle. 
   
+  A user story is defined as an informal description of a software feature, written from the perspective of an end user and discovered during the consultation process.
+   User stories have several different templates, but a common example is called the five Ws. As who, what, or where I want something because of, why? 
+   
+    Agile places a large emphasis on understanding a client's perspective and delivering software that an end user actually wants.
+    
+     Acceptance criteria help prevent miscommunication between development teams and the client
+     and clarify the conditions under which a user story is fulfilled. 
+     This is defined by a set of statements that have pass/fail results for our functional and nonfunctional requirements.
+     
+     This process ensures that the client understands the technical requirements for any user story and that developers are building desirable features.
+     
+     The types of acceptance criteria can vary. 
+     One popular category is list-driven or rule-oriented. This is particularly useful for creating a backlog. 
+     But the second type, scenario-oriented acceptance criteria, is more helpful for translating tasks into a format that can drive the behavior-driven development process.
+     
+     TDD:
+      But the formula itself is as follows. You first write a test, knowing that your code will fail to pass this test. You then implement the unit of code that allows for your tests to pass, and, if necessary, refactor your code. Finally, repeat these steps until you have reached the point where you have working software, with all tests passing
+      
+      Where does TDD fall short?
+       While test-driven development is a great methodology for building your applications in a confident, iterative manner, questions might arise, such as, well, yes, I should be testing, but what should I be testing, and how much should I be testing? As well as, how do I understand a failing test? If there are no clear guidelines as to what tests matter and what should be tested
+             
+      Dan North gave a compelling argument for a different approach to test-driven development that would allow developers to understand 
+      where to start and what to test in their code. BDD was a mashup of principles taken from TDD and Agile, combining the needs of business analysts and developers into a single framework. 
+       
+   While testing is at the heart of TDD, BDD encourages testing that comprehensively describes the behavior of the system you're trying to build.
+  
+  BDD: Business needs are defined in code and are testable.
+  behaviour instead of test.
+  
+  North encouraged writing tests with expressive names, usually in the form of a sentence that declared what a test was checking. This not only provided direction in what actually needed to be tested, but also made it clear to business stakeholders what the application was supposed to do when it was finished. 
   
