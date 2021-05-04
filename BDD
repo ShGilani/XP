@@ -1,3 +1,16 @@
+ a shared understanding of the goals of any increment of work. 
+ 
+ Some people refer to BDD as “TDD done right.”
+ 
+ 3 amigoes
+ ------------
+  They should constantly be exchanging information. But meeting regularly to discuss these understandings before, during, and after a work increment allows for collaboration on an outcome, and a clear definition of when an outcome has been reached. These conversations are sometimes referred to as Three Amigos workshops, huddles, or the triad. The benefits of such a meeting include building a shared understanding about a work increment, identifying confusion and misunderstandings as early as possible, and defining clear acceptance criteria that mark when an increment has been completed. 
+  . Keep in mind that this meeting is not limited to three single people, but to three perspectives, so there may be multiple people present that fill each of these roles.
+  This shouldn't be a regularly scheduled meeting, but, instead, it's an opportunity to discuss an increment of work. 
+  
+   Now that we've had a three amigos meeting and driven out some of the details surrounding our concrete example, we're almost ready to turn things over to the developer team to start building our application. But developers want to know when the application is functioning. We need a way to translate our acceptance criteria into executable tests that can verify the behavior of our system and create confidence that we're building the right thing in the beginning, even if these requirements might change later on.
+     
+ 
  A lack of understanding around the requirements, what should be built, can still occur.
  
   Have you ever experienced getting to the end of an iteration only to discover that miscommunications caused you to build out a feature that didn't provide value
@@ -33,5 +46,104 @@
   BDD: Business needs are defined in code and are testable.
   behaviour instead of test.
   
+   The primary goal of BDD is to build the right thing
+   
+   Understand the problem, first.
+   
+   . When starting a new project, many times it can seem like what is desired from stakeholders is fairly straightforward. In reality, the complexity of the system requirements and acceptance criteria become more and more apparent throughout the application lifecycle
+   
+   . In his essay, No Silver Bullet, legendary computer scientist and architect Fred Brooks states, "The hardest part of building a software system "is deciding precisely what to build." 
+   
+    There are a number of starting points that must be addressed before you begin the BDD process. 
+    First, business stakeholders and product owners should have clearly communicated about what should be produced.
+    Acceptance criteria for the product should be mostly fleshed out, although BDD will help to refine this even more. 
+    And finally, your user stories should have already been defined.
+    
+    concrete example / Specificities
+    ------------------------------------------
+     BDD seeks to qualify your acceptance criteria by having discussions around concrete examples.
+      Concrete examples will have user stories that are details and full of context. 
+      
+       The reason we need concrete examples is so that we can know exactly what to test and how to test in a robust and focused manner. 
+       
+       . If your examples are too generic or abstract, knowing how to write tests that matter will be very difficult for developers. 
+       
+       Acceptance Criteria vs BDD Scenarios:
+       -----------------------------------------------
+       Scenario format:
+       --------------------
+       Given (set of initail conditions)
+       When (an event occurs)
+       Then (outcome expected)
+       
+       
+       
+       
+  
   North encouraged writing tests with expressive names, usually in the form of a sentence that declared what a test was checking. This not only provided direction in what actually needed to be tested, but also made it clear to business stakeholders what the application was supposed to do when it was finished. 
   
+Gherkin:
+-------------
+. Gherkin a human readable language, gives us a means to document our concrete examples and explicitly state the intention of our code. 
+. The language is semantic, meaning that it utilizes a number of special keywords in order to allow for feature files to be parsed. 
+. Gherkin files are saved as plain text and use the dot feature file extension. 
+
+Keywords:
+----------------
+Feature:
+. It is simply providing a name and summary of a larger feature of the software that you will be testing. The text that follows the feature keyword is the name of the feature itself.
+
+Scenario:
+The scenario keyword indicates to Cucumber that we have a single concrete example that we would like to test. Each scenario has a particular expectation for how a system will behave in a specific situation, and will have pass or fail results. The sum total behavior described by our scenarios should define the feature itself, and each feature will generally contain between five and 20 different scenarios.
+
+Given:
+Context for our scenario.
+
+When:
+Actor/Event acts on the System
+
+Then:
+Result/Outcome
+
+ Phrasing a scenario in Gherkin allows us to write down our concrete examples and document our acceptance criteria at the same time. When the feature file is parsed, it's connected to a series of definitions for the Given, When, and Then steps that are mapped to the functionality contained within your application.
+ 
+ . The great thing about phrasing your acceptance criteria as a scenario in Gherkin is that it's easily parsed by BDD frameworks like Cucumber, meaning that your tests can be written in a language that is clear and easily understood by business stakeholders, testers, and developers alike.
+ 
+ BDD Frameworks:
+ -------------
+ 
+  That being said, let's review some of the frameworks that can facilitate the BDD process by providing a common language that business stakeholders, developers, and testers can use to define and develop acceptance criteria. 
+  
+  Serenity (open source)
+  JGiven
+  
+  Cucumber:
+  Cucumber is a BDD framework which automates the validation of functional business value in a very clean and understandable format. 
+  Not only does it automate our BDD tests, but it also merges specification and test documentation into a cohesive whole, providing a single source of truth in our application's life cycle. Because our tests are executed automatically, 
+  our specifications are always up to date and implements living documentation for our code base. Using the business-readable domain-specific language of Gherkin
+  
+  define acceptance criteria in ...... Executable Specifications: (using Gherkin)
+  ------------------------------
+  . Cucumber was designed to help bridge the gap between stakeholders and development teams by focusing on clear executable specifications, the automation of tests, and providing living documentation. 
+   Executable specifications are the code that define the behavior of an application in business language. Cucumber provides the Gherkin language, which allows for the behavior of software to be specified in a way that allows business stakeholders and developers to mutually understand when acceptance criteria have been met. 
+  
+   automated acceptance testing:
+   
+   living documentation:
+    Cucumber provides a system that dynamically generates documentation because of the manner that tests are written.
+   
+    your tests themselves become a living source of documentation that reflect the accuracy of your application
+     It provides a single source of truth for an application's lifecycle by merging test automation and test documentation.
+     
+     transparent language for acceptance testing.
+     
+     3:
+     ----------
+     Executable Specification | Automated Tests | Living Documentation
+  
+  
+  
+  
+  
+
+
