@@ -140,6 +140,14 @@ Result/Outcome
      3:
      ----------
      Executable Specification | Automated Tests | Living Documentation
+     
+     Despite TDD’s clear benefits, its usual loop
+     [test, code, refactor, (repeat)]
+     can cause developers to lose the overall picture of the application’s business goals.
+     
+     The tests may also be strongly coupled with the implementation. They focus on the unit (the class or the method) that is tested, and the business goals may not be considered.
+     
+     
   
   
   
