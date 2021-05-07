@@ -1,0 +1,30 @@
+Values, Principles, Practices:
+Just as values bring purpose to practices, practices bring accountability to values.
+XP embraces five values to guide development:
+
+communication, simplicity, feedback, courage, and respect.
+
+XP a way of building software products together as a team. What matters most in team software development is communication. You can listen to people who have had similar problems in the past. You can talk as a team about how to make sure the problem doesn't recur. Communication is important for creating a sense of team and effective cooperation. Communication, though, is not all you need for effective software development.
+
+Achieve simplicity by eliminating unneeded or deferrable requirements from today's concerns. To make a system simple enough to gracefully solve only today's problem is hard work. 
+
+No fixed direction remains valid for long; whether we are talking about the details of software development, the requirements of the system, or the architecture of the system. Directions set in advance of experience have an especially short half-life. Change is inevitable, but change creates the need for feedback.
+
+Courage to seek real, concrete answers, courage to speak truths, pleasant or unpleasant, Courage to take action to solve problems.
+
+Every person whose life is touched by software development has equal value as a human being. No one is intrinsically worth more than anyone else. The contributions of each person on the team need to be respected. I am important and so are you.
+
+XP Principles:
+Humanity:
+People develop software. This simple, inescapable fact invalidates most of the available methodological advice. Often, software development doesn't meet human needs, acknowledge human frailty, and leverage human strength. Acting like software isn't written by people exacts a high cost on participants, their humanity ground away by an inhumane process that doesn't acknowledge their needs. This isn't good for business either, with the costs and disruption of high turnover and missed opportunities for creative action.
+
+There are other human needs; such as rest, exercise, and socialization; that don't need to be met in the work environment. Time away from the team gives each individual more energy and perspective to bring back to the team. Limiting work hours allows time for these other human needs and enhances each person's contribution while he is with the team.
+
+Part of the challenge of team software development is balancing the needs of the individual with the needs of the team. The magic of great teams is that after the team members develop trust they find that they are free to be more themselves as a result of their work together.
+
+Economics:
+Two aspects of economics that affect software development are the time value of money and the option value of systems and teams.
+
+Software development is more valuable when it earns money sooner and spends money later. Incremental design explicitly defers design investment until the last responsible moment in an effort to spend money later. Pay-per-use provides a way of realizing revenue from features as soon as they are deployed.
+
+Another source of economic value in software development is its value as options for the future. If I can redeploy my media scheduling program for a variety of scheduling-related tasks, it is much more valuable than if it can only be used for its originally intended purpose.
